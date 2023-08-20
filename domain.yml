@@ -1,0 +1,163 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_faq/ask_what:
+  - text: "Gujarat Industrial Development Corporation (GIDC) is the Nodal agency of the Government of Gujarat for providing Industrial backbone of the state. GIDC has been set up under the Gujarat Industrial Development Act 1962 as a Statutory Board.GIDC has been established with a vision of “To make GIDC an effective, vibrant and timely provider of quality industrial infrastructure with easy, quick and transparent delivery mechanism at competitive pricing and without losing sight of its social responsibilities"
+  
+  utter_faq/ask_price:
+  - text: "The details of allotment prices of each estate is available on the link mentioned below for your reference: https://gidc.gujarat.gov.in/allotmentprice"
+
+  utter_faq/ask_function:
+  - text: "GIDC identifies locations suitable for industrial development and creates industrial estates with infrastructure such as roads, drainage, electricity, water supply, street lights, and ready-to-occupy factory sheds. GIDC has an inventory of 202 estates comprising of over 63,000 units across the State. The major activities of GIDC involve identification & aggregation of land for industrial purpose, allotment of industrial plots and development of core & support infrastructure.For more details please visit: https://www.gidc.gov.in"
+    image: "https://gidc.gujarat.gov.in/images/faq1.jpg"
+   
+  utter_faq/ask_benefits:
+  - text: "GIDC land is classified as non-agricultural, thus eliminating the need for NA/NOC permission and need for verification of titles
+           Titles of GIDC land / building are free from encumbrances and are marketable
+           GIDC provides world class infrastructure as well as state of art facilities in its estates.
+           GIDC estates provide quality water supply and adequate power supply.
+           GIDC estates are equipped with Chemical and Waste Disposal Systems
+           Regular Maintenance of Infrastructure
+           GIDC estates facilitate cluster benefits related to raw material, market, technology, common services, linkages etc.
+           GIDC offers reasonable allotment price with flexible payment options
+           The chemical estates are equipped with environment management infrastructure
+          GIDC also provides sites / land for solid waste disposal and for CETPs at concessional rate
+          For more details please visit: https://www.gidc.gov.in"
+  
+  utter_faq/ask_estates:
+  - text: "Currently land allotment is in progress in Sanand estate in Ahmedabad district the investors can apply online by logging on to the GIDC website, https://www.gidc.gov.in."
+  
+  utter_faq/ask_process:
+  - text: "GIDC has introduced land allotment system without any physical touch point where submission of all support documents and presentation will be done through online system. An application will be considered complete after the applicant submits the online copies of application and required documents (including project presentation).The applicant has to submit the print out of the system generated application and acknowledgement receipt along with all necessary documents through Registered Post (RPAD) to the office of concerned Regional Manager within *30 days from the date of applying online.
+           *Please note that if above mentioned documents are not received within prescribed time limit then application stands cancelled.
+           If any of the requirement mentioned in the application isn’t clear than GIDC will either contact applicant for clarification or if require GIDC will ask applicant for further information verification/ presentation of their proposed project/unit at GIDC head office for counselling before the final decision of land allotment. During counselling of applicant corporation will suggest the applicant to match the required norms and criteria defined by corporation like water demand, power demand, effluent generation, solid waste generation and any other requirement needs to be corrected.
+           If everything found to be in order by GIDC, system generated an online allotment letter will be awarded to the applicant. In case where in GIDC asked for clarification(s) from applicant, after receiving appropriate response either on call/mail or during counselling session, decision will be made and accordingly applicant will be intimated online.
+           Click here for online application : https://egov.gidcgujarat.org/gidc/frmgeneralterms.aspx"
+    image: "https://gidc.gujarat.gov.in/images/application-allotment.png"
+  
+  utter_faq/ask_payment:
+  - text: "If the land parcel size is more than 50,000 sq. mtr. then payment options are
+           Option 1
+           100% down payment upfront
+           Option 2
+           Applicant can pay the down payment @ 50% of the OCA amount within 60 days of the receipt of allotment letter.
+           The remaining 50% is to be paid by 12 post - dated cheques (PDCs) of quarterly instalments with the prevailing rate of interest, which is subject to revision from time to time
+           If the land parcel size is equal to or less than 50,000 sq. mtr. then payment options are
+           30% down payment (within 2 months from date of allotment)
+           The remaining 70% is to be paid in quarterly instalments. It includes moratorium period of two years, initial 8 quarterly instalments of interest only as per prevailing interest rate.
+           Remaining amount equally divided into 32 quarterly instalments along with prevailing interest rate (from 3rd year onwards)"
+
+  utter_faq/ask_FSI:
+  - text: "Permissible FSI in GIDC industrial estate is 1.0 whereas the minimum and maximum ground coverage is 20% and 50% respectively for considering the utilization of plot."
+
+  utter_faq/ask_basis:
+  - text: "The land in GIDC estate is allotted on lease hold basis. The land is allotted for a lease period of 99 years which can be renewable for another 99 years."
+
+  utter_faq/ask_MSME:
+  - text: "Yes, to promote Micro Small and Medium Enterprises (MSMEs) GIDC has planned to establish four dedicated MSME Parks with smaller plot size majority in the range from 250 to 500 Sq. mtr.
+
+           MSME Parks are planned at:
+
+           Sanand, Ahmedabad
+           Juned, Bharuch
+           Halol, Panchmahal
+           Bardoli, Surat
+           Moreover to encourage small entrepreneurs to set up new micro and small industrial units in urban centres of the state where high real-estate costs act as a huge deterrent, GIDC has planned phase-wise development of “Multi-Storeyed Sheds” at 25 locations near urban centres of Gujarat. In phase-I GIDC has already initiated the development work of Multi-Storeyed Sheds at 10 locations.
+
+           Lodhika, Rajkot
+           Chhatral, Gandhinagar
+           Sanand II, Ahmedabad
+           Kathwada, Ahmedabad
+           Gandhinagar Electronic Estate, Gandhinagar
+           Jamnagar III, Jamnagar
+           Chitra, Bhavnagar
+           Ankleshwar, Bharuch
+           Vapi, Valsad
+           Umargaon, Valsad
+           These vertical estates shall come up in 2000-2500 sq. mtr. plots located in the existing industrial estates. Each Multi-Storeyed Shed shall comprise of 16 units of 100 sq. mtr. and 12 units of 50 sq. mtr."
+  utter_faq/ask_MSMEBenefits:
+  - text: "Flexible Payment Option: 30% upfront & 70% in quarterly instalment (up to 50,000 sq. mtr.)
+           Relaxation in payment period from 3 years to 10 years.
+           Subsidised Interest Rate by 2% (up to 4,000 sq. mtr. of plot)
+           Special Concession on Actual Allotment Price for MSMEs & Women Entrepreneurs"
+  utter_faq/ask_WomenPark:
+  - text: "Yes, to Promote Women Entrepreneurship through Micro and Small Enterprises (MSEs), GIDC came up with an idea of setting up of “Women Industrial Park”. GIDC has planned three dedicated Women Park at (1) Sanand, Ahmedabad; (2) Juned, Bharuch and (3) Bardoli, Surat. The Parks will comprise mainly of small size plots ranging from 300 to 1000 Sq. Mtr. These plots shall be supported with additional Infrastructural facilities and basic amenities vis-à-vis roads, signages, streetlights, power supply and water supply distribution network."
+  utter_faq/ask_WomenBenefits:
+  - text: "Flexible Payment Option: 30% upfront & 70% in quarterly instalment (up to 50,000 sq. mtr.)
+           Relaxation in payment period from 3 years to 10 years.
+           Subsidised Interest Rate by 2% (up to 4,000 sq. mtr. of plot)
+           Special Concession on Actual Allotment Price for MSMEs & Women Entrepreneurs"
+  utter_faq/ask_other:
+  - text: "GIDC also provides online facilities for:
+           GIS based mapping of Industrial Estates
+           Application for Water Connection
+           Application for Drainage Connection
+           Application for Mortgage Permission
+           Plan Approval
+           Online Payment for Dues/Fees
+           Grievance Redressal System
+           For more details please visit: https://www.gidc.gov.in"
+  utter_faq/ask_transfer:
+  - text: "The transfer of utilized properties is permitted by the Corporation by charging transfer fees based on the utilization of property by transferor vide Circular dtd: 3/10/2012 and 22/6/2015.
+          The transfer of non-utilized / open Industrial properties is permitted by the Corporation by charging transfer fees @ 20% of prevailing A.P. and 1% non-utilization penalty per year to the maximum of 10%. The applicant can apply for transfer of non-utilized / open plot upto 31/03/2017 to take benefit of the policy. Relevant Circulars are 2/12/2015, 31/3/2016, 30/6/16 and 20/8/2016."
+  utter_faq/ask_TimeExtension:
+  - text: "Extension in time limit for utilization of property for cases within 6 years from the date of allotment is governed by Circular dtd: 30/03/10.
+           Extension in time limit for utilization of property for cases above 6 years from the date of allotment is governed by Circular dtd: 28/4/16. At present, extension for utilization of property is to be given upto 31/03/17."
+  utter_faq/ask_subletting:
+  - text: "Prior permission for sub-letting of portion of land for installation of Mobile Telecommunication Tower is governed by Circular dtd: 10/9/07 & 9/12/09"
+  utter_faq/ask_PurposeChange:
+  - text: "Permission for change of use from Industrial use to Commercial use is banned since 24.6.10."
+  utter_faq/ask_InterestRate:
+  - text: "Present rate of interest is 12% being charged on the outstanding amount on the capital portion on reducing balance method of the allotment price of the plot/shed. This rate is subject to revision every year based on the decision of the Board of Directors of GIDC."
+  utter_faq/ask_DelayRate:
+  - text: "Corporation is charging interest on delayed payment of instalment equivalent to normal rate of interest i.e. 12.50% at present and in addition to this, 3% Penal Interest is also being charged for the delayed period of the instalment. In short, we can say that if the payment is delayed total interest charged on the delayed payment instalment is 12.50% + 3% in addition to over and above normal rate of interest."
+  utter_faq/ask_HigherBank:
+  - text: "Corporation is not charging higher interest rate in comparison with the Bank rate Corporation is charging interest on reducing method payable quarterly whereas Banks charging interest on monthly, on compounded rate basis and penal interest and interest on delayed payment is also being added in the capital amount of the outstanding dues and interest is also being further charged, in view of this policy of the Corporation for charging interest is rational and also on lower side in comparison with Bank rate of interest."
+  utter_faq/ask_ServiceCharge:
+  - text: "Service Charge is fixed based on the actual expenditure incurred in the previous year on maintenance and repairs and expenditure on other infrastructure facilities. The rates are being fixed by Corporation's Division offices considering actual expenditure on M & R which is divided with the total allotted area of the particular estate to arrive at rate of service charge applicable. This decision is being taken in consultation with the concerned Industries Association of the Estates."
+  utter_faq/ask_NA:
+  - text: "N. A. Assessment is being charged per sq. mtr. every year based on the demands received from Revenue Department of Government of Gujarat for the land acquired for a particular estate."
+  utter_faq/ask_LeaseRent:
+  - text: "Lease Rent is being charged consider the total land allotted to the allottees i.e. Rs. 1/- per 836 sq. mtr. per annum."
+  utter_faq/ask_EvictionRefund:
+  - text: "The amount of refund on account of resumption is being calculated keeping in view of the present applicable policy of the Corporation in which normally Corporation charges normal interest, IDP, PI , SC, NAA , LR, infrastructure upgradation fund, water charges etc. and 1% penalty for the period from date of allotment till date of eviction. Interest is also further charged for 90 days for re-allotment of plot. This total recoverable amount is deducted from amount paid by allotee towards plot, revenue charges etc. & if any excess amount is there, it is refunded to the allotee."
+  utter_faq/ask_infrastructure:
+  - text: "Basic infrastructure facilities like road, SWD, drainage, street lights most of the Estates have W/S facilities."
+  utter_faq/ask_AdjoinPolicy:
+  - text: "Policy circular dtd: 16/2/2016, 10/07/2017, 01/01/2019 is governing policy available on website for the allotment of adjoining plot in GIDC estates."
+  utter_faq/ask_Auction:
+  - text: "The Corporation has declared 134 estates as saturated where the allotment done through public auction. Tenders are invited through advertisement in local newspaper. Plot / shed allotted to highest bidder."
+  utter_faq/ask_rent:
+  - text: "Permission can be given on payment of 10% for first 10 years of AP of land price and other conditions as per circular dtd: 7/1/04."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
